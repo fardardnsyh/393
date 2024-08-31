@@ -1,0 +1,10 @@
+.root {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #efefef;
+}
+
+.content {
+  flex-grow: 1;
+}

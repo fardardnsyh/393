@@ -1,0 +1,58 @@
+:root {
+  --header-height: 3.5rem;
+  --max-width: 1024px;
+  --font-size-xs: 0.9rem;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2.4rem;
+  --font-size-xl: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: unset;
+  list-style-type: none;
+  word-wrap: break-word;
+  vertical-align: bottom;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+}
+
+html {
+  background-color: #1a1819;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+body {
+  margin-top: var(--header-height);
+}
+
+.root {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+}
+
+.invisible {
+  width: 100%;
+  opacity: 0;
+}
+
+.fade-in {
+  width: 100%;
+  animation: fade-in-animation 1s ease-out forwards;
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
